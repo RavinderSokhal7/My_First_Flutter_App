@@ -1,0 +1,4 @@
+#Tue Dec 31 23:47:29 IST 2019
+base.0=C\:\\Users\\Ravinder's PC\\Desktop\\fp\\quiz_new\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
