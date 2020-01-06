@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(_questions[_questionIndex]),
+              child: Question(_questions[_questionIndex]),
             ),
             Divider(),
             Padding(
