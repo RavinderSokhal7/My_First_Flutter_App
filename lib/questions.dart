@@ -7,7 +7,10 @@ class Question extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(questionText),
+      title: Text(questionText, 
+                  style: TextStyle(fontSize: 28),
+                  textAlign: TextAlign.center 
+                  ),
     );
   }
 }
