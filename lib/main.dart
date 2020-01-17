@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './questions.dart';
+import './answers.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -37,34 +38,13 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Question(_questions[_questionIndex]),
-            ),
+            Question(_questions[_questionIndex]),
             Divider(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                child: Text("Answer 1"),
-                onPressed: _answerButtonPressed,
-              ),
-            ),
+            Answer(_answerButtonPressed, "Answer 1"),
             Divider(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                child: Text("Answer 2"),
-                onPressed: _answerButtonPressed,
-              ),
-            ),
+            Answer(_answerButtonPressed, "Answer 2"),
             Divider(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                child: Text("Answer 3"),
-                onPressed: _answerButtonPressed,
-              ),
-            ),
+            Answer(_answerButtonPressed, "Answer 3"),
             Divider(),
           ],
         ),
